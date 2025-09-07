@@ -42,7 +42,7 @@ ipcMain.on('message', async (event, arg) => {
 })
 
 ipcMain.on('save-pdf', async (event, { pdfBuffer })=> {
-  const downloadPath = app.getPath('downloads')
+  const downloadPath = app.getPath('pictures')
   const filePath = join(downloadPath, 'example.pdf')
 
   try{
